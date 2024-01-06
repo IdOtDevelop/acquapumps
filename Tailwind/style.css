@@ -2616,11 +2616,3 @@ body {
     padding-bottom: 70px;
   }
 }
-@media (max-width: 1280px) {
-  .mimg {
-    display: none;
-  }
-  .mmimg {
-    display: block;
-  }
-}
