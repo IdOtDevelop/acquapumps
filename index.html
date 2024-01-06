@@ -23,16 +23,24 @@
         #header {
             transition: all 0.5s;
             z-index: 997;
-            padding: 15px 0;
         }
 
         #header.header-scrolled,
         #header.header-inner-pages {
-            background: rgba(40, 58, 90, 0.9);
+            --tw-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+            --tw-shadow-colored: inset 0 -1px 0 0 var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            --tw-bg-opacity: 0.99;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+
+            /* --tw-backdrop-blur: blur(4px);
+            -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness); */
         }
 
         #header .logo img {
-            max-height: 40px;
+            max-height: 50px;
         }
 
         /*--------------------------------------------------------------
@@ -287,7 +295,7 @@
 
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
+    <header id="header" class="headerr fixed-top">
         <div class="container d-flex align-items-center">
 
             <!-- <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1> -->
@@ -450,9 +458,9 @@
 
 
 
+    <br><br><br><br>
 
-
-    <section id="home" style="margin-top: 100px;">
+    <section id="home">
         <div class="af cf ef xj zj de ag la 2xl:ud-mx-[60px] og cn">
             <div class="a">
                 <span class="slick-carousel">
