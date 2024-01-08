@@ -17,11 +17,19 @@
 
     <!-- Header CSS  -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
         /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+        * {
+            font-family: mulis, sans-serif;
+            text-decoration: none;
+        }
+
         #header {
-            transition: all 0.5s;
+            font-family: mulish, sans-serif;
+            transition: all 0.3s;
             z-index: 997;
         }
 
@@ -51,6 +59,7 @@
 */
         .navbar {
             padding: 0;
+            font-family: mulish, sans-serif;
         }
 
         .navbar ul {
@@ -71,11 +80,13 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 0 10px 30px;
-            font-size: 15px;
-            font-weight: 500;
-            color: black;
+            /* font-size: 15px; */
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: rgb(113, 112, 112);
             white-space: nowrap;
             transition: 0.3s;
+            text-decoration: none;
         }
 
         .navbar a i,
@@ -89,7 +100,7 @@
         .navbar .active,
         .navbar .active:focus,
         .navbar li:hover>a {
-            color: #47b2e4;
+            color: #0a4c80;
         }
 
         .navbar .getstarted,
@@ -99,14 +110,14 @@
             border-radius: 50px;
             color: black;
             font-size: 14px;
-            border: 2px solid #47b2e4;
+            border: 2px solid #0a4c80;
             font-weight: 600;
         }
 
         .navbar .getstarted:hover,
         .navbar .getstarted:focus:hover {
             color: black;
-            background: #31a9e1;
+            background: #0a4c80;
         }
 
         .navbar .dropdown ul {
@@ -119,7 +130,7 @@
             z-index: 99;
             opacity: 0;
             visibility: hidden;
-            background: black;
+            background: rgb(255, 255, 255);
             box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
             transition: 0.3s;
             border-radius: 4px;
@@ -130,11 +141,12 @@
         }
 
         .navbar .dropdown ul a {
-            padding: 10px 20px;
-            font-size: 14px;
+            padding: 12px 23px;
+            font-size: 0.95rem;
             text-transform: none;
-            font-weight: 500;
-            color: #0c3c53;
+            font-weight: 00;
+            color: #0a4c80;
+            text-decoration: none;
         }
 
         .navbar .dropdown ul a i {
@@ -144,7 +156,7 @@
         .navbar .dropdown ul a:hover,
         .navbar .dropdown ul .active:hover,
         .navbar .dropdown ul li:hover>a {
-            color: #47b2e4;
+            color: #0091ff;
         }
 
         .navbar .dropdown:hover>ul {
@@ -209,7 +221,7 @@
             right: 0;
             left: 0;
             bottom: 0;
-            background: rgba(40, 58, 90, 0.9);
+            background: #0a4d80df;
             transition: 0.3s;
             z-index: 999;
         }
@@ -229,7 +241,7 @@
             left: 15px;
             padding: 10px 0;
             border-radius: 10px;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
             overflow-y: auto;
             transition: 0.3s;
         }
@@ -237,14 +249,15 @@
         .navbar-mobile a,
         .navbar-mobile a:focus {
             padding: 10px 20px;
-            font-size: 15px;
-            color: #37517e;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #23385d;
         }
 
         .navbar-mobile a:hover,
         .navbar-mobile .active,
         .navbar-mobile li:hover>a {
-            color: #47b2e4;
+            color: #0e72bf;
         }
 
         .navbar-mobile .getstarted,
@@ -261,7 +274,7 @@
             z-index: 99;
             opacity: 1;
             visibility: visible;
-            background: black;
+            background: rgb(255, 255, 255);
             box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
         }
 
@@ -274,13 +287,13 @@
         }
 
         .navbar-mobile .dropdown ul a i {
-            font-size: 12px;
+            font-size: .9rem;
         }
 
         .navbar-mobile .dropdown ul a:hover,
         .navbar-mobile .dropdown ul .active:hover,
         .navbar-mobile .dropdown ul li:hover>a {
-            color: #47b2e4;
+            color: #1482d6;
         }
 
         .navbar-mobile .dropdown>.dropdown-active {
@@ -312,30 +325,18 @@
 
                 <ul class="do yl">
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+                    <li><a class="nav-link   scrollto" href="#portfolio">Our Dealers</a></li>
+                    <li class="dropdown"><a href="#"><span>Our Products</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Combo Offers</a></li>
+                            <li><a href="#">Openwell Submersible Pumps</a></li>
+                            <li><a href="#">V4 Submersible Pumpsets</a></li>
+                            <li><a href="#">Automatic Water Level Controller</a></li>
+                            <li><a href="#">Carbon Pads & V4 Bearings</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -2367,75 +2368,53 @@
             <div class="a">
                 <div class="lb od ia">
                     <div class="fc zk/2 em/12 pn/12 nf">
-                        <div class="xa ik">
-                            <a href="index.html" class="mb na">
-                                <img src="./Tailwind/logo.svg" alt="logo" class="xc oj">
-                                <img src="./Tailwind/logo-white.svg" alt="logo" class="xc nj nb">
-                            </a>
-                            <p class="kh _g ph na">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                                feugiat et sem at Etiam in lobortis dui. Praesent .
+                        <div class="xa ik  ">
+                            <h3 class="lh bh qh _j ya">
+                                ABOUT ACQUA PUMPS
+                            </h3>
+                            <p class="kh _g ph na  ">
+                                Acqua pumps and motors is a decade long pump and motor manufacturer in Tamilnadu. Acqua
+                                pumps and motors is the wholesale manufacturer, located in the Manchester of South
+                                India- “Coimbatore”. We are acceptable at delivering the best motors and pumps all over
+                                Tamilnadu for retail shops, vendors, and merchants.
                             </p>
-                            <div class="lb qd">
-                                <a href="javascript:void(0)" class="ph lb qd sd yi qa" name="social-link"
-                                    aria-label="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" class="ff">
-                                        <path
-                                            d="M10 1.7002C5.41669 1.7002 1.66669 5.44186 1.66669 10.0502C1.66669 14.2169 4.71669 17.6752 8.70002 18.3002V12.4669H6.58335V10.0502H8.70002V8.20853C8.70002 6.11686 9.94169 4.96686 11.85 4.96686C12.7584 4.96686 13.7084 5.1252 13.7084 5.1252V7.18353H12.6584C11.625 7.18353 11.3 7.8252 11.3 8.48353V10.0502H13.6167L13.2417 12.4669H11.3V18.3002C13.2637 17.9901 15.0519 16.9881 16.3416 15.4752C17.6314 13.9624 18.3378 12.0382 18.3334 10.0502C18.3334 5.44186 14.5834 1.7002 10 1.7002Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a href="javascript:void(0)" class="ph lb qd sd yi qa" name="social-link"
-                                    aria-label="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" class="ff">
-                                        <path
-                                            d="M18.7167 5.00016C18.075 5.29183 17.3833 5.4835 16.6667 5.57516C17.4 5.1335 17.9667 4.4335 18.2333 3.59183C17.5417 4.0085 16.775 4.30016 15.9667 4.46683C15.3083 3.75016 14.3833 3.3335 13.3333 3.3335C11.375 3.3335 9.77499 4.9335 9.77499 6.9085C9.77499 7.19183 9.80832 7.46683 9.86666 7.72516C6.89999 7.57516 4.25832 6.15016 2.49999 3.99183C2.19166 4.51683 2.01666 5.1335 2.01666 5.7835C2.01666 7.02516 2.64166 8.12516 3.60833 8.75016C3.01666 8.75016 2.46666 8.5835 1.98333 8.3335C1.98333 8.3335 1.98333 8.3335 1.98333 8.3585C1.98333 10.0918 3.21666 11.5418 4.84999 11.8668C4.54999 11.9502 4.23333 11.9918 3.90832 11.9918C3.68333 11.9918 3.45833 11.9668 3.24166 11.9252C3.69166 13.3335 4.99999 14.3835 6.57499 14.4085C5.35832 15.3752 3.81666 15.9418 2.13333 15.9418C1.84999 15.9418 1.56666 15.9252 1.28333 15.8918C2.86666 16.9085 4.74999 17.5002 6.76666 17.5002C13.3333 17.5002 16.9417 12.0502 16.9417 7.32516C16.9417 7.16683 16.9417 7.01683 16.9333 6.8585C17.6333 6.3585 18.2333 5.72516 18.7167 5.00016Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a href="javascript:void(0)" class="ph lb qd sd yi qa" name="social-link"
-                                    aria-label="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" class="ff">
-                                        <path
-                                            d="M6.50002 1.6665H13.5C16.1667 1.6665 18.3334 3.83317 18.3334 6.49984V13.4998C18.3334 14.7817 17.8241 16.0111 16.9177 16.9175C16.0113 17.8239 14.7819 18.3332 13.5 18.3332H6.50002C3.83335 18.3332 1.66669 16.1665 1.66669 13.4998V6.49984C1.66669 5.21796 2.17591 3.98858 3.08234 3.08215C3.98876 2.17573 5.21814 1.6665 6.50002 1.6665ZM6.33335 3.33317C5.5377 3.33317 4.77464 3.64924 4.21203 4.21185C3.64942 4.77446 3.33335 5.53752 3.33335 6.33317V13.6665C3.33335 15.3248 4.67502 16.6665 6.33335 16.6665H13.6667C14.4623 16.6665 15.2254 16.3504 15.788 15.7878C16.3506 15.2252 16.6667 14.4622 16.6667 13.6665V6.33317C16.6667 4.67484 15.325 3.33317 13.6667 3.33317H6.33335ZM14.375 4.58317C14.6513 4.58317 14.9162 4.69292 15.1116 4.88827C15.3069 5.08362 15.4167 5.34857 15.4167 5.62484C15.4167 5.9011 15.3069 6.16606 15.1116 6.36141C14.9162 6.55676 14.6513 6.6665 14.375 6.6665C14.0988 6.6665 13.8338 6.55676 13.6385 6.36141C13.4431 6.16606 13.3334 5.9011 13.3334 5.62484C13.3334 5.34857 13.4431 5.08362 13.6385 4.88827C13.8338 4.69292 14.0988 4.58317 14.375 4.58317ZM10 5.83317C11.1051 5.83317 12.1649 6.27216 12.9463 7.05356C13.7277 7.83496 14.1667 8.89477 14.1667 9.99984C14.1667 11.1049 13.7277 12.1647 12.9463 12.9461C12.1649 13.7275 11.1051 14.1665 10 14.1665C8.89495 14.1665 7.83514 13.7275 7.05374 12.9461C6.27234 12.1647 5.83335 11.1049 5.83335 9.99984C5.83335 8.89477 6.27234 7.83496 7.05374 7.05356C7.83514 6.27216 8.89495 5.83317 10 5.83317ZM10 7.49984C9.33698 7.49984 8.70109 7.76323 8.23225 8.23207C7.76341 8.70091 7.50002 9.3368 7.50002 9.99984C7.50002 10.6629 7.76341 11.2988 8.23225 11.7676C8.70109 12.2364 9.33698 12.4998 10 12.4998C10.6631 12.4998 11.2989 12.2364 11.7678 11.7676C12.2366 11.2988 12.5 10.6629 12.5 9.99984C12.5 9.3368 12.2366 8.70091 11.7678 8.23207C11.2989 7.76323 10.6631 7.49984 10 7.49984Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a href="javascript:void(0)" class="ph lb qd sd yi qa" name="social-link"
-                                    aria-label="social-link">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" class="ff">
-                                        <path
-                                            d="M15.8333 2.5C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333ZM15.4167 15.4167V11C15.4167 10.2795 15.1304 9.5885 14.621 9.07903C14.1115 8.56955 13.4205 8.28333 12.7 8.28333C11.9917 8.28333 11.1667 8.71667 10.7667 9.36667V8.44167H8.44167V15.4167H10.7667V11.3083C10.7667 10.6667 11.2833 10.1417 11.925 10.1417C12.2344 10.1417 12.5312 10.2646 12.75 10.4834C12.9688 10.7022 13.0917 10.9989 13.0917 11.3083V15.4167H15.4167ZM5.73333 7.13333C6.10464 7.13333 6.46073 6.98583 6.72328 6.72328C6.98583 6.46073 7.13333 6.10464 7.13333 5.73333C7.13333 4.95833 6.50833 4.325 5.73333 4.325C5.35982 4.325 5.0016 4.47338 4.73749 4.73749C4.47338 5.0016 4.325 5.35982 4.325 5.73333C4.325 6.50833 4.95833 7.13333 5.73333 7.13333ZM6.89167 15.4167V8.44167H4.58333V15.4167H6.89167Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="fc hk/2 zk/2 fm/12 qn/12 nf">
+                    <div class="ffc hk/2 zk/2 fm/12 qn/12 nf">
                         <div class="xa">
                             <h3 class="lh bh qh _j ya">
-                                Quick Links
+                                OUR PRODUCTS
+
                             </h3>
                             <ul class="vd">
                                 <li>
                                     <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Our Blog
+                                        Combo Offers
+
+
+
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Check Pricing
+                                        Openwell Submersible Pumps
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        About Us
+                                        V4 Submersible Pumpsets
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Help &amp; Support
+                                        Automatic Water Level Controller
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="kh _g ph yi kb">
+
+                                        Carbon Pads & V4 Bearings
                                     </a>
                                 </li>
                             </ul>
@@ -2444,41 +2423,69 @@
                     <div class="fc hk/2 zk/2 gm/12 rn/12 nf">
                         <div class="xa">
                             <h3 class="lh bh qh _j ya">
-                                App Information
+                                WE ARE HERE!
                             </h3>
                             <ul class="vd">
                                 <li>
+                                    Address:
                                     <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Style Guideline
+                                        6-A, Sri Ranga Layout,
+                                        Nallampalayam,
+                                        Coimbatore, Tamilnadu – 641 006, India.
+
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Getting Started
+                                    Email:
+                                    <a href="mailto:sales@acquapumps.in" class="kh _g ph yi kb">
+
+                                        sales@acquapumps.in
+
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Changelog
+                                    Phone:
+                                    <a href="tel: +919566827704" class="kh _g ph yi kb">
+                                        +91 95668 27704
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:void(0)" class="kh _g ph yi kb">
-                                        Update Details
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
+
                     <div class="fc zk/2 gm/12 rn/12 nf">
                         <div class="xa">
                             <h3 class="lh bh qh _j ya">
-                                Join Our Newsletter
+                                FOLLOW US!
                             </h3>
-                            <p class="kh _g ph na">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla
-                                feugiat
-                            </p>
+
+
+
+                            <div class="lb qd ">
+                                <a href="javascript:void(0)" class="ph lb qd sd yi qa" name="social-link"
+                                    aria-label="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" class="ff">
+                                        <path
+                                            d="M10 1.7002C5.41669 1.7002 1.66669 5.44186 1.66669 10.0502C1.66669 14.2169 4.71669 17.6752 8.70002 18.3002V12.4669H6.58335V10.0502H8.70002V8.20853C8.70002 6.11686 9.94169 4.96686 11.85 4.96686C12.7584 4.96686 13.7084 5.1252 13.7084 5.1252V7.18353H12.6584C11.625 7.18353 11.3 7.8252 11.3 8.48353V10.0502H13.6167L13.2417 12.4669H11.3V18.3002C13.2637 17.9901 15.0519 16.9881 16.3416 15.4752C17.6314 13.9624 18.3378 12.0382 18.3334 10.0502C18.3334 5.44186 14.5834 1.7002 10 1.7002Z">
+                                        </path>
+                                    </svg>
+                                </a>
+
+                                <a href="javascript:void(0)" class="ph lb qd sd yi qa" name="social-link"
+                                    aria-label="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" class="ff">
+                                        <path
+                                            d="M6.50002 1.6665H13.5C16.1667 1.6665 18.3334 3.83317 18.3334 6.49984V13.4998C18.3334 14.7817 17.8241 16.0111 16.9177 16.9175C16.0113 17.8239 14.7819 18.3332 13.5 18.3332H6.50002C3.83335 18.3332 1.66669 16.1665 1.66669 13.4998V6.49984C1.66669 5.21796 2.17591 3.98858 3.08234 3.08215C3.98876 2.17573 5.21814 1.6665 6.50002 1.6665ZM6.33335 3.33317C5.5377 3.33317 4.77464 3.64924 4.21203 4.21185C3.64942 4.77446 3.33335 5.53752 3.33335 6.33317V13.6665C3.33335 15.3248 4.67502 16.6665 6.33335 16.6665H13.6667C14.4623 16.6665 15.2254 16.3504 15.788 15.7878C16.3506 15.2252 16.6667 14.4622 16.6667 13.6665V6.33317C16.6667 4.67484 15.325 3.33317 13.6667 3.33317H6.33335ZM14.375 4.58317C14.6513 4.58317 14.9162 4.69292 15.1116 4.88827C15.3069 5.08362 15.4167 5.34857 15.4167 5.62484C15.4167 5.9011 15.3069 6.16606 15.1116 6.36141C14.9162 6.55676 14.6513 6.6665 14.375 6.6665C14.0988 6.6665 13.8338 6.55676 13.6385 6.36141C13.4431 6.16606 13.3334 5.9011 13.3334 5.62484C13.3334 5.34857 13.4431 5.08362 13.6385 4.88827C13.8338 4.69292 14.0988 4.58317 14.375 4.58317ZM10 5.83317C11.1051 5.83317 12.1649 6.27216 12.9463 7.05356C13.7277 7.83496 14.1667 8.89477 14.1667 9.99984C14.1667 11.1049 13.7277 12.1647 12.9463 12.9461C12.1649 13.7275 11.1051 14.1665 10 14.1665C8.89495 14.1665 7.83514 13.7275 7.05374 12.9461C6.27234 12.1647 5.83335 11.1049 5.83335 9.99984C5.83335 8.89477 6.27234 7.83496 7.05374 7.05356C7.83514 6.27216 8.89495 5.83317 10 5.83317ZM10 7.49984C9.33698 7.49984 8.70109 7.76323 8.23225 8.23207C7.76341 8.70091 7.50002 9.3368 7.50002 9.99984C7.50002 10.6629 7.76341 11.2988 8.23225 11.7676C8.70109 12.2364 9.33698 12.4998 10 12.4998C10.6631 12.4998 11.2989 12.2364 11.7678 11.7676C12.2366 11.2988 12.5 10.6629 12.5 9.99984C12.5 9.3368 12.2366 8.70091 11.7678 8.23207C11.2989 7.76323 10.6631 7.49984 10 7.49984Z">
+                                        </path>
+                                    </svg>
+                                </a>
+
+                            </div>
+
+
+
+
                             <form class="e">
                                 <input type="email" placeholder="Enter your email"
                                     class="fc re sj be he le _f tf kh ah ph ci fj dj">
@@ -2617,13 +2624,15 @@
                 </span>
             </div>
         </div>
-        <div class="re sj kf wow fadeInUp" data-wow-delay=".25s"
-            style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
-            <p class="kh _g ph zg">
-                Designed by <a href="https://idotinc.in/" style="color:#fca524"><b>idot</b></a>
+        <br>
+        <div class="zg qd sd fadeInUp" data-wow-delay=".2s">
+            <p class="ph">
+                Designed by <a href=" https://idotinc.in/" style="color:#fca524;text-decoration: none;"><b>idot</b></a>
             </p>
         </div>
     </footer>
+
+
 
 
     <a x-show="scrolledFromTop" href="javascript:void(0)"

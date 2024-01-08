@@ -783,7 +783,7 @@ h6 {
 }
 a {
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 b,
 strong {
@@ -1832,6 +1832,7 @@ body {
   font-weight: 800;
 }
 .kh {
+  text-decoration: none;
   font-weight: 600;
 }
 .lh {
@@ -2615,6 +2616,4 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-}
-.headerr {
 }
