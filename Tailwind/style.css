@@ -896,6 +896,7 @@ ol,
 ul,
 menu {
   list-style: none;
+  list-style: outside;
   margin: 0;
   padding: 0;
 }
@@ -1489,8 +1490,8 @@ body {
 }
 .vd > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(18px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(18px * var(--tw-space-y-reverse));
+  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10px * var(--tw-space-y-reverse));
 }
 .wd > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
