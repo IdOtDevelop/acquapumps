@@ -20,6 +20,7 @@
   backface-visibility: hidden;
   outline: 0;
 }
+
 .glightbox-container.inactive {
   display: none;
 }
